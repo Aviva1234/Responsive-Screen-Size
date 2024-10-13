@@ -1,0 +1,50 @@
+.outer{
+    background-color: deepskyblue;
+    height: 97vh;
+    display: grid;
+    place-items: center;
+}
+.inner{
+    background-color: deeppink;
+    font-size: 4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#size{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    color:darkorchid;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/*Mobile  -> 576px
+Tablet  -> 768px
+Laptop  -> 992px
+Desktop -> 1200px */
+:root{
+    --color-Mob: pink;
+    --color-Tab: skyblue;
+    --color-Lap: lightgreen;
+    --color-Desk: purple;
+}
+@media screen and (min-width:576px){
+    .outer{
+        background-color: var(--color-Mob);
+    }
+}
+@media screen and (min-width:768px){
+    .outer{
+        background-color: var(--color-Tab);
+    }
+}
+@media screen and (min-width:992px){
+    .outer{
+        background-color: var(--color-Lap);
+    }
+}
+@media screen and (min-width:1200px){
+    .outer{
+        background-color:var(--color-Desk);
+    }
+}
